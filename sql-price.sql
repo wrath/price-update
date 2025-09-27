@@ -44,7 +44,8 @@ JOIN (
         'پک کادویی',
         'لباس زیر',
         'سوتین',
-        'شورت'
+        'شورت',
+        'لباس خواب'
     )
     UNION
     -- انتخاب محصولات متغیر
@@ -92,7 +93,8 @@ JOIN (
         'پک کادویی',
         'لباس زیر',
         'سوتین',
-        'شورت'
+        'شورت'',
+        'لباس خواب'
     )
 ) AS filtered_products ON pm.post_id = filtered_products.product_id
 SET pm.meta_value = ROUND(CAST(pm.meta_value AS DECIMAL(10, 2)) * 1.10, 0)
