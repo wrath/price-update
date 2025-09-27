@@ -93,7 +93,7 @@ JOIN (
         'پک کادویی',
         'لباس زیر',
         'سوتین',
-        'شورت'',
+        'شورت',
         'لباس خواب'
     )
 ) AS filtered_products ON pm.post_id = filtered_products.product_id
